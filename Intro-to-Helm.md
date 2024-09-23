@@ -24,6 +24,7 @@ c) Important concepts
 - managing repositories
 - managing releases
 - interfacing with the Helm library - sending charts to be installed and requesting for upgrading or uninstalling of existing releases
+  
 2.` Helm library` - provides logic for executing all Helm operations. It interfaces with the Kubernetes API server and enables
 - combining a chart and configuration to build a release
 - installing charts into kubernetes, and providing the subsequent release object
@@ -136,7 +137,9 @@ helm rollback nginx 1
 -
 
 **14) Helpful options for Install/Upgrade/Rollback**
+
 `--timeout`: A Go duration value to wait for kubernetes commands to complete. Default is` 5m0s`
+
 `--wait`: Waits until all pods are in ready state. It will wait for as long as the `--timeout` value. If timeout is reached, the release will be marked as `FAILED`.
 
 **f) Creating your own charts**
