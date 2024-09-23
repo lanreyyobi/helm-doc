@@ -19,6 +19,7 @@ c) Important concepts
 3. A `release` is a running instance of a chart, combined with a specific config.
 
 **d) Components**
+
 1.` Helm Client` - command-line client for end users and responsible for
 - local chart development
 - managing repositories
@@ -33,6 +34,7 @@ c) Important concepts
 The helm client and library are written in go language.
 
 **e) Getting started**
+
 **1) Initialize a Helm chart repository**
 - Add a chart repository from [Artifact Hub](https://artifacthub.io/)
 ```shell
