@@ -147,26 +147,26 @@ helm rollback nginx 1
 
 **f) Creating your own charts**
 
-1) You can create your own chart using create command.
+**1) You can create your own chart using create command.**
 ```shell
 helm create wema
 ```
 This will create a chart `./wema` which you can now edit and create your own templates.
 
-2) You can validate that the chart is well-formed by running
+**2) You can validate that the chart is well-formed by running**
 ```shell
 helm lint 
 ```
-3) you can also check the validity of the chart by using the template command
+**3) You can also check the validity of the chart by using the template command**
 ```shell
 helm template [NAME] [CHART]
 helm template wema1 wema-0.1.0.tgz
 ```
-4) You can then package the chart for distribution by running
+**4) You can then package the chart for distribution by running**
 ```shell
 helm package wema
 ```
-5) You can now install the chart using the `install` command
+**5) You can now install the chart using the `install` command**
 ```shell
 helm install wema ./wema-0.1.0.tgz
 ```
