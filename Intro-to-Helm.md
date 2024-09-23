@@ -104,6 +104,7 @@ echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.y
 helm install -f values.yaml bitnami/wordpress --generate-name
 ```
 Two ways to pass configuration data during install
+
 a) `--values` or `-f` to specify a YAML file with overrides
 ```shell
 helm install nginx -f update.yaml bitnami/nginx 
