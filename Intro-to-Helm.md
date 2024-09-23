@@ -1,10 +1,10 @@
 ## Helm
-a) Installation
+**a) Installation**
 ```shell
 brew install helm
 choco install kubernetes-helm
 ```
-b) Purpose of Helm
+**b) Purpose of Helm**
 - Helm is a tool for managing Kubernetes packages called `charts`. Helm can do the following:
 
 - Create new charts from scratch
@@ -13,7 +13,7 @@ b) Purpose of Helm
 - Install and uninstall charts into an existing Kubernetes cluster
 - Manage the release cycle of charts that have been installed with Helm
 
-c) Important concepts
+**c) Important concepts**
 1. The `chart` is a bundle of information necessary to create an instance of a Kubernetes application.
 2. The `config` contains configuration information that can be merged into a packaged chart to create a releasable object.
 3. A `release` is a running instance of a chart, combined with a specific config.
